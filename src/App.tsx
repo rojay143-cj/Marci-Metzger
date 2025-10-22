@@ -348,133 +348,143 @@ function App() {
         </div>
       )}
 
-      <section id="contact" className="py-20 bg-gradient-to-b from-emerald-50 to-emerald-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Let's Start Your Real Estate Journey
-            </h2>
-            <p className="text-xl text-gray-700">
-              Contact me today for personalized real estate services
-            </p>
+<section id="contact" className="py-20 bg-gradient-to-b from-emerald-50 to-emerald-100">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-12">
+      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        Let's Start Your Real Estate Journey
+      </h2>
+      <p className="text-xl text-gray-700">
+        Contact me today for personalized real estate services
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      {/* Contact Info */}
+      <div className="bg-white rounded-2xl shadow-xl p-8">
+        <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+        <div className="space-y-6">
+          <div className="flex items-start space-x-4">
+            <div className="bg-emerald-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+              <MapPin className="w-6 h-6 text-emerald-600" />
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
+              <p className="text-gray-600">3190 HW-160, Suite F<br />Pahrump, Nevada 89048</p>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
-
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-emerald-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-emerald-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
-                    <p className="text-gray-600">3190 HW-160, Suite F<br />Pahrump, Nevada 89048</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-emerald-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-emerald-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                    <a href="tel:+12069196886" className="text-emerald-600 hover:text-emerald-700 text-lg font-medium">
-                      (206) 919-6886
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-emerald-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-emerald-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Office Hours</h4>
-                    <p className="text-gray-600">8:00 AM - 7:00 PM<br />Daily</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-8 pt-8 border-t border-gray-200">
-                <h4 className="font-semibold text-gray-900 mb-4">Follow Me</h4>
-                <div className="flex space-x-4">
-                  <a href="#" className="bg-emerald-100 hover:bg-emerald-200 w-12 h-12 rounded-lg flex items-center justify-center transition-colors">
-                    <Facebook className="w-6 h-6 text-emerald-600" />
-                  </a>
-                  <a href="#" className="bg-emerald-100 hover:bg-emerald-200 w-12 h-12 rounded-lg flex items-center justify-center transition-colors">
-                    <Instagram className="w-6 h-6 text-emerald-600" />
-                  </a>
-                  <a href="#" className="bg-emerald-100 hover:bg-emerald-200 w-12 h-12 rounded-lg flex items-center justify-center transition-colors">
-                    <Linkedin className="w-6 h-6 text-emerald-600" />
-                  </a>
-                </div>
-              </div>
+          <div className="flex items-start space-x-4">
+            <div className="bg-emerald-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+              <Phone className="w-6 h-6 text-emerald-600" />
             </div>
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
+              <a href="tel:+12069196886" className="text-emerald-600 hover:text-emerald-700 text-lg font-medium">
+                (206) 919-6886
+              </a>
+            </div>
+          </div>
 
-            <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Send a Message</h3>
-              <form className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Full Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all"
-                    placeholder="John Doe"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all"
-                    placeholder="john@example.com"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all"
-                    placeholder="(206) 919-6886"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all resize-none"
-                    placeholder="Tell me about your real estate needs..."
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-4 rounded-lg transition-colors shadow-lg"
-                >
-                  Send Message
-                </button>
-              </form>
+          <div className="flex items-start space-x-4">
+            <div className="bg-emerald-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+              <Clock className="w-6 h-6 text-emerald-600" />
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-1">Office Hours</h4>
+              <p className="text-gray-600">8:00 AM - 7:00 PM<br />Daily</p>
             </div>
           </div>
         </div>
-      </section>
+
+        <div className="mt-8 pt-8 border-t border-gray-200">
+          <h4 className="font-semibold text-gray-900 mb-4">Follow Me</h4>
+          <div className="flex space-x-4">
+            <a href="#" className="bg-emerald-100 hover:bg-emerald-200 w-12 h-12 rounded-lg flex items-center justify-center transition-colors">
+              <Facebook className="w-6 h-6 text-emerald-600" />
+            </a>
+            <a href="#" className="bg-emerald-100 hover:bg-emerald-200 w-12 h-12 rounded-lg flex items-center justify-center transition-colors">
+              <Instagram className="w-6 h-6 text-emerald-600" />
+            </a>
+            <a href="#" className="bg-emerald-100 hover:bg-emerald-200 w-12 h-12 rounded-lg flex items-center justify-center transition-colors">
+              <Linkedin className="w-6 h-6 text-emerald-600" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Contact Form */}
+      <div className="bg-white rounded-2xl shadow-xl p-8">
+        <h3 className="text-2xl font-bold text-gray-900 mb-6">Send a Message</h3>
+        <form className="space-y-6">
+          <div>
+            <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+              Full Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all"
+              placeholder="John Doe"
+            />
+          </div>
+          <div>
+            <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+              Email Address
+            </label>
+            <input
+              type="email"
+              id="email"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all"
+              placeholder="john@example.com"
+            />
+          </div>
+          <div>
+            <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
+              Phone Number
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all"
+              placeholder="(206) 919-6886"
+            />
+          </div>
+          <div>
+            <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+              Message
+            </label>
+            <textarea
+              id="message"
+              rows={4}
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all resize-none"
+              placeholder="Tell me about your real estate needs..."
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-4 rounded-lg transition-colors shadow-lg"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+
+    {/* Google Map Embed */}
+    <div className="mt-16 rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3207.619714174626!2d-115.9966895!3d36.209262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8e6379dc96e4f%3A0xe04f60e1a4b798c9!2s3190%20NV-160%20Suite%20F%2C%20Pahrump%2C%20NV%2089048%2C%20USA!5e0!3m2!1sen!2sph!4v1729585902744!5m2!1sen!2sph"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>
 
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
